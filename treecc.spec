@@ -7,7 +7,6 @@ License: 	GPL
 Source: 	%name-%version.tar.bz2
 BuildRequires:	flex byacc
 URL: 		http://www.southern-storm.com.au/treecc.html
-Buildroot: 	%_tmppath/%name-%version-buildroot
 
 
 %description
