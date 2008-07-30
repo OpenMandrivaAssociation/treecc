@@ -1,6 +1,6 @@
 Name: 		treecc
 Version: 	0.3.8
-Release: 	%mkrel 1
+Release: 	%mkrel 3
 Summary: 	A tool for helping in compiler development
 Group: 		Development/C
 License: 	GPL
