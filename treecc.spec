@@ -1,13 +1,14 @@
+%define debug_package %nil
+
 Name: 		treecc
-Version: 	0.3.8
-Release: 	%mkrel 5
+Version: 	0.3.10
+Release: 	%mkrel 6
 Summary: 	A tool for helping in compiler development
 Group: 		Development/C
-License: 	GPL
-Source: 	%name-%version.tar.bz2
+License: 	GPLv2
+Source0: 	http://download.savannah.gnu.org/releases/dotgnu-pnet/%{name}-%{version}.tar.gz
 BuildRequires:	flex byacc
 URL: 		http://www.southern-storm.com.au/treecc.html
-Buildroot: 	%_tmppath/%name-%version-buildroot
 
 
 %description
@@ -29,11 +30,7 @@ heavy use of abstract syntax trees and the operations upon them.
 make -C tests check-TESTS
 
 %install
-rm -rf $RPM_BUILD_ROOT
 %makeinstall
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %post
 %_install_info %name
@@ -42,10 +39,8 @@ rm -rf $RPM_BUILD_ROOT
 %_remove_install_info %name
 
 %files
-%defattr(-,root,root)
 %doc AUTHORS ChangeLog COPYING NEWS README doc/essay.html
 %_bindir/%name
 %_infodir/* 
 %_mandir/man1/%name.*
 %_libdir/*
-
