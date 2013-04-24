@@ -33,8 +33,6 @@ make -C tests check-TESTS
 %makeinstall
 
 
-%preun
-%_remove_install_info %name
 
 %files
 %doc AUTHORS ChangeLog COPYING NEWS README doc/essay.html
