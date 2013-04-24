@@ -32,8 +32,6 @@ make -C tests check-TESTS
 %install
 %makeinstall
 
-%post
-%_install_info %name
 
 %preun
 %_remove_install_info %name
