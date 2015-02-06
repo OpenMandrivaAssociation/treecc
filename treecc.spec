@@ -2,7 +2,7 @@
 
 Name: 		treecc
 Version: 	0.3.10
-Release: 	7
+Release: 	8
 Summary: 	A tool for helping in compiler development
 Group: 		Development/C
 License: 	GPLv2
