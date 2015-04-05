@@ -1,3 +1,4 @@
+%define _build_pkgcheck_set %{nil}
 %define debug_package %nil
 
 Name: 		treecc
@@ -40,4 +41,4 @@ make -C tests check-TESTS
 %_infodir/* 
 %_mandir/man1/%name.*
 %_libdir/*
-%exclude %_libdir/libtreecc.a
+
