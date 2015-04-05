@@ -40,3 +40,4 @@ make -C tests check-TESTS
 %_infodir/* 
 %_mandir/man1/%name.*
 %_libdir/*
+%exclude %_libdir/libtreecc.a
