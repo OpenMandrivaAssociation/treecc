@@ -9,7 +9,7 @@ Group: 		Development/C
 License: 	GPLv2
 Source0: 	http://download.savannah.gnu.org/releases/dotgnu-pnet/%{name}-%{version}.tar.gz
 BuildRequires:	flex byacc
-URL: 		http://www.southern-storm.com.au/treecc.html
+URL: 		https://www.southern-storm.com.au/treecc.html
 
 
 %description
